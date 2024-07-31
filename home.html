@@ -47,6 +47,26 @@
         display: none; /* Hide navigation links on small screens */
     }
 }
+/* hero */
+        /* .logo-slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+        }
+        .logos-slide {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .logos-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        } */
         .logo-slider {
             position: relative;
             overflow: hidden;
@@ -66,8 +86,39 @@
             height: 400px;
             object-fit: cover;
         }
-
-
+        .search-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+         .search-inputbox{
+            flex: 1;
+            height: 30px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        .search-container button {
+            padding: 10px;
+            border: none;
+            background-color: #000000;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+/* zone */
         .container-zone {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +179,7 @@
 .container-buildings {
             display: flex;
             gap: 20px;
-            height: 500px;
+            /* height: 350px; */
             width: auto;
             margin-right: 5%;
      margin-left: 5%;
@@ -149,29 +200,53 @@
             font-size: 18px;
             text-align: center;
         }
+
+        .container-news {
+            display: flex;
+            gap: 20px;
+            /* height: 350px; */
+            width: auto;
+            margin-right: 5%;
+     margin-left: 5%;
+
+        }
+        .news {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .news img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .news h3{
+            color: #32373c;
+            font-size: 18px;
+            text-align: center;
+        }
+
         .readmorebutton{
             display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
     margin: 0;
-
         }
-
-        
+  
         .read-more {
     display: flex;
     align-items: center;
     background-color: #fff;
     border: none;
     border-radius: 50px;
-    padding: 10px 20px;
+    
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #4CAF50;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
 }
 
 .read-more:hover {
@@ -180,6 +255,7 @@
 }
 
 .read-more .icon {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +449,7 @@
     color: white;
     padding: 20px 0;
 }
-
+/* footer */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -430,9 +506,156 @@
 .properties ul li {
     margin: 5px 0;
 }
+/* project */
+.Project{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    margin-right: 5%;
+     margin-left: 5%;
+     padding-left: 25px;
+}
+.container-Project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  
+}
+.card-Project {
+    display: flex;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.card-Project:hover {
+    transform: scale(1.05);
+}
+
+.card-Project img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+.info-Project {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-Project h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info-Project p {
+    color: #666;
+    margin: 5px 0 0;
+}
+/* developer */
+.divdeveloper{
+    width: 500px;
+		margin: 50px auto;
+		text-align: center;
+}
+figure {
+		margin: 0;
+	}
+
+	.container {
+		width: 500px;
+		height: 300px;
+		text-align: left;
+		margin: 60px auto;
+		-webkit-perspective: 1000px;
+		-webkit-perspective-origin: 50% -25%;
+	}
+
+		.carousel {
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: translateZ(-540px);
+			position: relative;
+			margin: 0;
+			width: 500px;
+			height: 300px;
+			-webkit-transition: 1s;
+		}
+
+			.carousel img {
+				position: absolute;
+				border: 15px solid rgba(0, 0, 0, .8);
+				opacity: .5;
+				-webkit-transition: 1s;
+        width: 500px;
+        height: 300px;
+        background:#ccc;
+			}
+
+				
+				.carousel img:nth-child(1) { -webkit-transform: translateZ(540px) scale(.8); }
+				.carousel img:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(.8); }
+				.carousel img:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(.8); }
+
+	label {
+		cursor: pointer;
+		background: #eee;
+		display: inline-block;
+		border-radius: 50%;
+		width: 30px;
+		padding-top: 7px;
+		height: 23px;
+		font: .9em Arial;
+	}
+
+	label:hover {
+		background: #ddd;
+	}
+
+	input {
+		position: absolute;
+		left: -9999px;
+	}
+
+	input:checked + label {
+		font-weight: bold;
+		background: #ddd;
+	}
+
+		input[value="1"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px); }
+		input[value="2"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-45deg); }
+		input[value="3"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-90deg); }
+		input[value="4"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-135deg); }
+		input[value="5"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-180deg); }
+		input[value="6"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-225deg); }
+		input[value="7"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-270deg); }
+		input[value="8"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-315deg); }
+
+		input[value="1"]:checked ~ .container .carousel img:nth-child(1) { -webkit-transform: translateZ(540px) scale(1); opacity: 1; }
+		input[value="2"]:checked ~ .container .carousel img:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="3"]:checked ~ .container .carousel img:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="4"]:checked ~ .container .carousel img:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="5"]:checked ~ .container .carousel img:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="6"]:checked ~ .container .carousel img:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="7"]:checked ~ .container .carousel img:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(1); opacity: 1; }
+		input[value="8"]:checked ~ .container .carousel img:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(1); opacity: 1; }
+    
     </style>
 </head>
 <body>
+    
     <!-- header -->
     <header>
         <div class="header-container">
@@ -452,7 +675,7 @@
         </div>
     </header>
     <!-- hero -->
-    <div id="app">
+    <!-- <div id="app">
         <div style="font-size:200px;color:transparent;position:fixed;z-index:-9999">
             India Real Estate Property Site - Buy Sell Rent Properties Portal - 99acres.com
         </div>
@@ -471,6 +694,18 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div> -->
+    <div class="logo-slider">
+        <div class="logos-slide">
+            <div class="slide"><img src="https://static.ieplads.com/bmsjs/banners/99acres-hp/1366/1366-adani-2.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="https://static.ieplads.com/bmsjs/banners/99acres-hp/1366/1366-adani-2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="https://static.ieplads.com/bmsjs/banners/99acres-hp/1366/1366-adani-2.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="https://static.ieplads.com/bmsjs/banners/99acres-hp/1366/1366-adani-2.jpg" alt="Image 4"></div>
+        </div>
+        <div class="search-container">
+            <input class="search-inputbox" type="text" placeholder="Search by location, developer or project name" >
+            <!-- <button>Search</button> -->
         </div>
     </div>
 
@@ -502,6 +737,304 @@
         </div>   
     </div>
    </section>
+<!-- project -->
+   <section>
+    <div class="line-title">
+        <p>Luxury Redefined</p>
+        <h2>The Premier Project</h2>
+        
+    </div>
+</section>
+   <section class="Project">    
+    <div class="container-Project">
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+        <div class="card-Project">
+            <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+            <div class="info-Project">
+                <h2>New Town</h2>
+                <p>newtown</p>
+                <p>Lorem ipsum dolor, sit</p>
+                <p>Rs 8l Onwards</p>
+                <p>2 BHK Apartment</p>
+                <p>New Launch</p>
+            </div>
+        </div>
+    </div>    
+    </section>  
+    <section>
+        <div class="line-title">
+            <p>Premium Perfection</p>
+            <h2>The Signature Project</h2>
+            
+        </div>
+    </section>
+       <section class="Project">    
+        <div class="container-Project">
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+            <div class="card-Project">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                <div class="info-Project">
+                    <h2>New Town</h2>
+                    <p>newtown</p>
+                    <p>Lorem ipsum dolor, sit</p>
+                    <p>Rs 8l Onwards</p>
+                    <p>2 BHK Apartment</p>
+                    <p>New Launch</p>
+                </div>
+            </div>
+        </div>    
+        </section> 
+        <section>
+            <div class="line-title">
+                <p>Affordable Elegance</p>
+                <h2>The Accessible Project</h2>
+                
+            </div>
+        </section>
+           <section class="Project">    
+            <div class="container-Project">
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+                <div class="card-Project">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
+                    <div class="info-Project">
+                        <h2>New Town</h2>
+                        <p>newtown</p>
+                        <p>Lorem ipsum dolor, sit</p>
+                        <p>Rs 8l Onwards</p>
+                        <p>2 BHK Apartment</p>
+                        <p>New Launch</p>
+                    </div>
+                </div>
+            </div>    
+            </section>  
    <!-- zone -->
    <section>
     <div class="line-title">
@@ -509,8 +1042,7 @@
         
     </div>
 </section>
-   <section class="zone">
-        
+   <section class="zone">    
     <div class="container-zone">
         <div class="card">
             <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="New Town">
@@ -740,9 +1272,9 @@
         <p>Stay updated on everything about Real Estate
         </p>
     </div>
-        <div class="container-buildings">
+        <div class="container-news">
            
-            <div class="building">
+            <div class="news">
                 <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Building 2">
             <h3>Properties in Kolkata</h3>
             <div class="readmorebutton">
@@ -751,7 +1283,7 @@
                     <span>READ MORE</span>
             </div>
             </div>
-            <div class="building">
+            <div class="news">
                 <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Building 3">
                 <h3>Properties in Kolkata</h3>
                 <div class="readmorebutton">
@@ -760,7 +1292,7 @@
                         <span>READ MORE</span>
                 </div>
             </div>
-            <div class="building">
+            <div class="news">
                 <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Building 3">
                 <h3>Properties in Kolkata</h3>
                 <div class="readmorebutton">
@@ -769,7 +1301,7 @@
                         <span>READ MORE</span>
                 </div>
             </div>
-            <div class="building">
+            <div class="news">
                 <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Building 3">
                 <h3>Properties in Kolkata</h3>
                 <div class="readmorebutton">
@@ -780,7 +1312,57 @@
             </div>
         </div>
     </section>
+    <!-- Developer -->
+
+    <section>
+        <div class="line-title">
+            <h2>Associated Developer
+            </h2>
+           
+        </div>
+        <div class="divdeveloper">
     
+            <input checked id="one" name="multiples" type="radio" value="1">
+            <label for="one"></label>
+    
+            <input id="two" name="multiples" type="radio" value="2">
+            <label for="two"></label>
+    
+            <input id="three" name="multiples" type="radio" value="3">
+            <label for="three"></label>
+    
+            <input id="four" name="multiples" type="radio" value="4">
+            <label for="four"></label>
+    
+            <input id="five" name="multiples" type="radio" value="5">
+            <label for="five"></label>
+    
+            <input id="six" name="multiples" type="radio" value="6">
+            <label for="six"></label>
+    
+            <input id="seven" name="multiples" type="radio" value="7">
+            <label for="seven"></label>
+    
+            <input id="eight" name="multiples" type="radio" value="8">
+            <label for="eight"></label>
+    
+            <div class="container">
+                <div class="carousel">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 1">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 2">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 3">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 4">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 5">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 6">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 7">
+                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 8">
+                </div>
+            </div>
+    
+        </div>
+    
+        
+    </section>
 <!-- footer -->
     <footer>
         <div class="footer-container">
