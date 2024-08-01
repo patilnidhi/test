@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
         /* header */
         header {
     background-color: #fff;
@@ -25,12 +28,14 @@
 .nav-links {
     display: flex;
     gap: 20px;
+    padding-right: 380px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+   
 }
 
 .nav-links a:hover {
@@ -104,7 +109,7 @@
             flex: 1;
             height: 30px;
             padding: 10px;
-            width: 100%;
+            /* width: 100%; */
             border: none;
             border-radius: 5px 0 0 5px;
             font-size: 16px;
@@ -112,6 +117,7 @@
         .search-container button {
             padding: 10px;
             border: none;
+            width: 100px;
             background-color: #000000;
             color: white;
             font-size: 16px;
@@ -238,9 +244,9 @@
     align-items: center;
     background-color: #fff;
     border: none;
-    border-radius: 50px;
+    border-radius: 40px;
     
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #4CAF50;
     cursor: pointer;
@@ -255,7 +261,7 @@
 }
 
 .read-more .icon {
-    margin-top: 25px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,6 +279,7 @@
 .line-title{
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
 
 }
 .line-title h2{
@@ -289,7 +296,7 @@
     align-items: center;
     height: 200px;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .review-section {
     display: flex;
@@ -343,10 +350,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     margin: 0;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .steps-container {
@@ -439,7 +446,8 @@
             text-align: center;
         }
         .section2{
-            margin-top: 100px;
+            margin-top: px;
+            padding-top: 50px;
         padding-right: 5%;
         padding-left: 5%;
         }
@@ -561,97 +569,54 @@
     margin: 5px 0 0;
 }
 /* developer */
-.divdeveloper{
-    width: 500px;
-		margin: 50px auto;
-		text-align: center;
-}
-figure {
-		margin: 0;
-	}
-
-	.container {
-		width: 500px;
-		height: 300px;
-		text-align: left;
-		margin: 60px auto;
-		-webkit-perspective: 1000px;
-		-webkit-perspective-origin: 50% -25%;
-	}
-
-		.carousel {
-			-webkit-transform-style: preserve-3d;
-			-webkit-transform: translateZ(-540px);
-			position: relative;
-			margin: 0;
-			width: 500px;
-			height: 300px;
-			-webkit-transition: 1s;
-		}
-
-			.carousel img {
-				position: absolute;
-				border: 15px solid rgba(0, 0, 0, .8);
-				opacity: .5;
-				-webkit-transition: 1s;
-        width: 500px;
-        height: 300px;
-        background:#ccc;
-			}
-
-				
-				.carousel img:nth-child(1) { -webkit-transform: translateZ(540px) scale(.8); }
-				.carousel img:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(.8); }
-				.carousel img:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(.8); }
-
-	label {
-		cursor: pointer;
-		background: #eee;
-		display: inline-block;
-		border-radius: 50%;
-		width: 30px;
-		padding-top: 7px;
-		height: 23px;
-		font: .9em Arial;
-	}
-
-	label:hover {
-		background: #ddd;
-	}
-
-	input {
-		position: absolute;
-		left: -9999px;
-	}
-
-	input:checked + label {
-		font-weight: bold;
-		background: #ddd;
-	}
-
-		input[value="1"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px); }
-		input[value="2"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-45deg); }
-		input[value="3"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-90deg); }
-		input[value="4"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-135deg); }
-		input[value="5"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-180deg); }
-		input[value="6"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-225deg); }
-		input[value="7"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-270deg); }
-		input[value="8"]:checked ~ .container .carousel { -webkit-transform: translateZ(-540px) rotateY(-315deg); }
-
-		input[value="1"]:checked ~ .container .carousel img:nth-child(1) { -webkit-transform: translateZ(540px) scale(1); opacity: 1; }
-		input[value="2"]:checked ~ .container .carousel img:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="3"]:checked ~ .container .carousel img:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="4"]:checked ~ .container .carousel img:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="5"]:checked ~ .container .carousel img:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="6"]:checked ~ .container .carousel img:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="7"]:checked ~ .container .carousel img:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(1); opacity: 1; }
-		input[value="8"]:checked ~ .container .carousel img:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(1); opacity: 1; }
+.logo-slider1 {
+    position: relative;
+    overflow: hidden;
+    /* padding: 80px 0 0 0; */
+    white-space: nowrap;
+   
     
+
+
+}
+
+.logo-slider1:hover .logos-slide1 {
+    animation-play-state: paused;
+}
+
+.logos-slide1 {
+  
+    display: inline-block;
+    animation: 15s slides infinite linear;
+   
+}
+
+.logos-slide1 .slides {
+   
+    display: inline-block;
+}
+
+.logos-slide1 img {
+   
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+@keyframes slides {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.bg{
+    background-color: #f3f3f3;
+    /* padding-top: 1px; */
+    padding-bottom: 80px;
+}
     </style>
 </head>
 <body>
@@ -669,9 +634,9 @@ figure {
                 <a href="#">Careers</a>
                 <a href="#">Contact</a>
             </nav>
-            <div class="menu-icon">
+            <!-- <div class="menu-icon">
                 <img src="path/to/menu-icon.png" alt="Menu Icon">
-            </div>
+            </div> -->
         </div>
     </header>
     <!-- hero -->
@@ -711,6 +676,7 @@ figure {
 
 
     <!-- luxuryproject -->
+     
     <section class="section2">
         <div class="line-title">
             <p>Unrivaled Opulence</p>
@@ -737,8 +703,10 @@ figure {
         </div>   
     </div>
    </section>
+
 <!-- project -->
-   <section>
+<section class="bg">
+   <section class="section2">
     <div class="line-title">
         <p>Luxury Redefined</p>
         <h2>The Premier Project</h2>
@@ -836,8 +804,9 @@ figure {
             </div>
         </div>
     </div>    
+    </section>
     </section>  
-    <section>
+    <section class="section2">
         <div class="line-title">
             <p>Premium Perfection</p>
             <h2>The Signature Project</h2>
@@ -936,13 +905,15 @@ figure {
             </div>
         </div>    
         </section> 
-        <section>
+        <section class="bg">
+        <section class="section2">
             <div class="line-title">
                 <p>Affordable Elegance</p>
                 <h2>The Accessible Project</h2>
                 
             </div>
         </section>
+        
            <section class="Project">    
             <div class="container-Project">
                 <div class="card-Project">
@@ -1034,9 +1005,11 @@ figure {
                     </div>
                 </div>
             </div>    
-            </section>  
+            </section>
+        </section>  
    <!-- zone -->
-   <section>
+    
+   <section class="section2">
     <div class="line-title">
         <h2>Property by Zone </h2>
         
@@ -1169,11 +1142,14 @@ figure {
     </div>
 </section>
      <!-- how we work -->
+     <section class="bg">
+<section class="section2">
     <div class="line-title">
         <h2>How we work</h2>
         <p>End to End Assistance
         </p>
     </div>
+</section>
     <section class="howwork">
         
         <div class="steps-container">
@@ -1215,12 +1191,15 @@ figure {
             </div>
         </div>
     </section>
+    </section>
     <!-- testimonials -->
+     <section class="section2">
     <div class="line-title">
         <h2>Client Testimonial</h2>
         <p>What our customers are saying about us
         </p>
     </div>
+</section>
     <section class="sectionreview">
         <div class="review-section">
             <div class="review-card">
@@ -1267,11 +1246,14 @@ figure {
     </section>
     <section>
         <!-- industarynews -->
+<section class="bg">
+        <section class="section2">
         <div class="line-title">
         <h2>Industry News </h2>
         <p>Stay updated on everything about Real Estate
         </p>
     </div>
+    </section>
         <div class="container-news">
            
             <div class="news">
@@ -1312,56 +1294,44 @@ figure {
             </div>
         </div>
     </section>
+ </section>
     <!-- Developer -->
 
     <section>
+        <section class="section2">
         <div class="line-title">
             <h2>Associated Developer
             </h2>
            
         </div>
-        <div class="divdeveloper">
+    </section >
+    <section style="margin-bottom: 80px;">
+        <div class="logo-slider1">
+            <div class="logos-slide1">
+              
+                     
+                    <div class="slides">
+                          <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Image 2">
+                          
+                      </div>
+                    <div class="slides">
+                          <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Image 1">
+                         
+                      </div>
+                    <div class="slides">
+                          <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Image 2">
+                         
+                      </div>
+                    <div class="slides">
+                          <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Image 1">
+                          
+                      </div>
     
-            <input checked id="one" name="multiples" type="radio" value="1">
-            <label for="one"></label>
-    
-            <input id="two" name="multiples" type="radio" value="2">
-            <label for="two"></label>
-    
-            <input id="three" name="multiples" type="radio" value="3">
-            <label for="three"></label>
-    
-            <input id="four" name="multiples" type="radio" value="4">
-            <label for="four"></label>
-    
-            <input id="five" name="multiples" type="radio" value="5">
-            <label for="five"></label>
-    
-            <input id="six" name="multiples" type="radio" value="6">
-            <label for="six"></label>
-    
-            <input id="seven" name="multiples" type="radio" value="7">
-            <label for="seven"></label>
-    
-            <input id="eight" name="multiples" type="radio" value="8">
-            <label for="eight"></label>
-    
-            <div class="container">
-                <div class="carousel">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 1">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 2">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 3">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 4">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 5">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 6">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 7">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799723.jpg?t=st=1722086152~exp=1722089752~hmac=7b526245156fb5ac435d0bfc8a298fca139113de100561876e0d9dcfbcbd973e&w=740" alt="Landscape 8">
-                </div>
+              
             </div>
+          </div>
     
-        </div>
-    
-        
+        </section> 
     </section>
 <!-- footer -->
     <footer>
@@ -1421,7 +1391,12 @@ figure {
 
    
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+         var copy = document.querySelector(".logos-slide1").cloneNode(true);
+         document.querySelector(".logo-slider1").appendChild(copy);
+       
+    </script>
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
             const logosSlide = document.querySelector(".logos-slide");
             const slides = document.querySelectorAll('.slide');
             let currentSlide = 0;
@@ -1431,8 +1406,9 @@ figure {
                 logosSlide.style.transform = `translateX(-${currentSlide * 100}%)`;
             }
 
-            setInterval(showNextSlide, 3000);
+            setInterval(showNextSlide, 5000);
         });
     </script>
+    
 </body>
 </html>
